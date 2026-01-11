@@ -3,7 +3,7 @@
 > **Empirical. Systematic. Ethical.**
 
 ### 👤 Tentang Saya
-Halo! Saya **Sabilillah Ramaniya Widodo**, seorang *Cyber Security Enthusiast* yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data. Saat ini, saya sedang menyelesaikan program Bootcamp Cyber Security (Batch 4) dengan fokus pada *Vulnerability Assessment*, *Penetration Testing*, dan *Malware Analysis*.
+Halo! Saya **Sabilillah Ramaniya Widodo**, seorang *DevSecOps Enthusiast* yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data. Saat ini, saya sedang menyelesaikan program Bootcamp Cyber Security (Batch 4) dengan fokus pada *Vulnerability Assessment*, *Penetration Testing*, dan *Malware Analysis*.
 
 Portofolio ini berfungsi sebagai CV digital untuk mendemonstrasikan kemampuan teknis saya dalam mengamankan infrastruktur kritis serta analisis ancaman siber.
 
