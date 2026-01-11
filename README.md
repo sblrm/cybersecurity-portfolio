@@ -24,7 +24,7 @@ Berdasarkan proyek yang telah diselesaikan, berikut adalah *stack* teknologi yan
 
 ---
 
-# This repository serves as a showcase of my technical capabilities in Cyber Security. Below are selected highlights from my laboratory assessments and projects, focusing on Vulnerability Assessment, Penetration Testing, and Malware Analysis. 
+## This repository serves as a showcase of my technical capabilities in Cyber Security. Below are selected highlights from my laboratory assessments and projects, focusing on Vulnerability Assessment, Penetration Testing, and Malware Analysis. 
 ## 📂 Project 1: Linux Server Vulnerability Assessment & Privilege Escalation
 
 **Deskripsi:**
