@@ -1,9 +1,9 @@
-# 🛡️ Portofolio Cyber Security - Sabilillah Ramaniya Widodo
+# Portofolio Cyber Security - Sabilillah Ramaniya Widodo
 
 > **Empirical. Systematic. Ethical.**
 
-### 👤 Tentang Saya
-Halo! Saya **Sabilillah Ramaniya Widodo**, seorang *DevSecOps Enthusiast* yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data. Saat ini, saya sedang menyelesaikan program Bootcamp Cyber Security (Batch 4) dengan fokus pada *Offensive Security*.
+### About Me
+Halo! Saya **Sabilillah Ramaniya Widodo**, seorang DevOps dan CyberSec Enthusiast yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data. Saat ini, saya sedang menyelesaikan program Bootcamp Cyber Security (Batch 4) dengan fokus pada *Offensive Security*.
 
 Portofolio ini berfungsi sebagai CV digital untuk mendemonstrasikan kemampuan teknis saya dalam mengamankan infrastruktur kritis serta analisis ancaman siber.
 
@@ -12,7 +12,7 @@ Portofolio ini berfungsi sebagai CV digital untuk mendemonstrasikan kemampuan te
 * **Sertifikasi & Pelatihan:** Bootcamp Cyber Security (Dibimbing.id).
 
 ### 🛠️ Keahlian Teknis (Technical Skills)
-Berdasarkan proyek yang telah diselesaikan, berikut adalah *stack* teknologi yang saya gunakan:
+Berikut adalah *stack* teknologi apa saja yang saya gunakan:
 
 | Kategori | Tools & Konsep |
 | :--- | :--- |
@@ -25,7 +25,7 @@ Berdasarkan proyek yang telah diselesaikan, berikut adalah *stack* teknologi yan
 ---
 
 This repository serves as a showcase of my technical capabilities in Cyber Security. Below are selected highlights from my laboratory assessments and projects, focusing on Vulnerability Assessment, Penetration Testing, and Malware Analysis. 
-## 📂 Project 1: Linux Server Vulnerability Assessment & Privilege Escalation
+## Project 1: Linux Server Vulnerability Assessment & Privilege Escalation
 
 **Deskripsi:**
 Proyek ini merupakan simulasi *Black Box Penetration Testing* pada mesin server berbasis Linux Debian. Tujuannya adalah mengidentifikasi celah keamanan yang memungkinkan eskalasi hak akses (*Privilege Escalation*) dari pengguna biasa menjadi *root*.
@@ -44,7 +44,7 @@ Tahap awal melibatkan pengumpulan informasi untuk memetakan permukaan serangan (
 
 Berikut adalah temuan kerentanan utama yang berhasil dieksploitasi:
 
-#### 🚩 Temuan A: World-Readable /etc/shadow (Critical)
+#### Temuan A: World-Readable /etc/shadow (Critical)
 File `/etc/shadow` yang menyimpan *hash* password pengguna memiliki konfigurasi permission yang salah, sehingga dapat dibaca oleh semua pengguna (*world-readable*).
 
 * **Bukti (Sanitized):**
@@ -55,7 +55,7 @@ File `/etc/shadow` yang menyimpan *hash* password pengguna memiliki konfigurasi 
 * **Eksploitasi:** Hash password root berhasil di-*crack* menggunakan **John The Ripper** dengan wordlist `rockyou.txt`, menghasilkan password `password123`.
 * **CVSS Score:** 8.5 (High).
 
-#### 🚩 Temuan B: Misconfiguration Sudo NOPASSWD
+#### Temuan B: Misconfiguration Sudo NOPASSWD
 Pengguna diizinkan menjalankan perintah tertentu sebagai *root* tanpa autentikasi password.
 
 * **Bukti:**
@@ -72,7 +72,7 @@ Pengguna diizinkan menjalankan perintah tertentu sebagai *root* tanpa autentikas
     root
     ```
 
-#### 🚩 Temuan C: Vulnerable SUID Binary (Exim 4.84)
+#### Temuan C: Vulnerable SUID Binary (Exim 4.84)
 Ditemukan binary `exim` versi lawas (4.84) dengan bit SUID aktif yang rentan terhadap *Local Privilege Escalation* (CVE-2016-1531).
 
 * **Eksploitasi:** Menjalankan script eksploitasi lokal `./cve-2016-1531.sh` yang memberikan akses root shell.
@@ -85,7 +85,7 @@ Setelah mendapatkan akses *root*, dampak yang ditimbulkan meliputi:
 
 ---
 
-## 📂 Project 2: Malware Analysis Simulation (Trojan Backdoor)
+## Project 2: Malware Analysis Simulation (Trojan Backdoor)
 
 **Deskripsi:**
 Analisis perilaku *malicious software* menggunakan pendekatan *Sandboxing* (Analisis Dinamis) dan Statis. Malware sampel dibuat menggunakan `msfvenom` untuk mensimulasikan serangan *Reverse Shell*.
@@ -117,7 +117,7 @@ Jika malware ini berhasil dieksekusi di komputer korban:
 
 Berikut adalah rangkuman rekomendasi mitigasi strategis berdasarkan kedua proyek di atas untuk meningkatkan postur keamanan organisasi.
 
-### 🛡️ Strategi Mitigasi (Defense in Depth)
+### Strategi Mitigasi (Defense in Depth)
 
 **Untuk Server Linux (VAPT Findings):**
 1.  **Hardening Permission:** Pastikan permission file `/etc/shadow` diatur ke `640` dan kunci SSH (`.ssh/`) diatur ke `600`.
