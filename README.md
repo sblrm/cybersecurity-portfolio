@@ -3,7 +3,7 @@
 > **Empirical. Systematic. Ethical.**
 
 ### About Me
-Halo! Saya **Sabilillah Ramaniya Widodo**, seorang DevOps dan CyberSec Enthusiast yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data. Saat ini, saya sedang menyelesaikan program Bootcamp Cyber Security (Batch 4) dengan fokus pada *Offensive Security*.
+Halo! Saya **Sabilillah Ramaniya Widodo**, seorang DevOps dan CyberSec Enthusiast yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data. Saat ini, saya sedang menjalani pendidikan Sarjana jurusan Computer Science di Binus University dan sedang menyelesaikan program Bootcamp Cyber Security di Dibimbing.id dengan fokus pada *Offensive Security*.
 
 Portofolio ini berfungsi sebagai CV digital untuk mendemonstrasikan kemampuan teknis saya dalam mengamankan infrastruktur kritis serta analisis ancaman siber.
 
