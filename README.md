@@ -1,45 +1,43 @@
 # 🛡️ Portofolio Cyber Security - Sabilillah Ramaniya Widodo
 
 > **Empirical. Systematic. Ethical.**
-> *Dokumentasi perjalanan pembelajaran teknis dan proyek keamanan siber.*
-
-## 1. Pengantar Portofolio (Introduction)
 
 ### 👤 Tentang Saya
-Halo! [cite_start]Saya **Sabilillah Ramaniya Widodo**, seorang *Cyber Security Enthusiast* yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data[cite: 3, 630]. [cite_start]Saat ini, saya sedang menyelesaikan program Bootcamp Cyber Security (Batch 4) dengan fokus pada *Vulnerability Assessment*, *Penetration Testing*, dan *Malware Analysis*[cite: 2, 629].
+Halo! Saya **Sabilillah Ramaniya Widodo**, seorang *Cyber Security Enthusiast* yang berdedikasi untuk mempelajari dan menerapkan praktik terbaik dalam melindungi sistem dan data. Saat ini, saya sedang menyelesaikan program Bootcamp Cyber Security (Batch 4) dengan fokus pada *Vulnerability Assessment*, *Penetration Testing*, dan *Malware Analysis*.
 
-[cite_start]Portofolio ini berfungsi sebagai CV digital untuk mendemonstrasikan kemampuan teknis saya dalam mengamankan infrastruktur kritis serta analisis ancaman siber[cite: 526].
+Portofolio ini berfungsi sebagai CV digital untuk mendemonstrasikan kemampuan teknis saya dalam mengamankan infrastruktur kritis serta analisis ancaman siber.
 
-* **Peran:** Cyber Security Student / Practitioner
-* [cite_start]**Minat Utama:** Penetration Testing, Threat Analysis, Vulnerability Management[cite: 531].
-* [cite_start]**Sertifikasi & Pelatihan:** Bootcamp Cyber Security Batch 4 (Dibimbing.id)[cite: 2].
+* **Peran:** Programmer / Penetration Tester
+* **Minat Utama:** DevSecOps, Penetration Testing, Threat Analysis, Vulnerability Management.
+* **Sertifikasi & Pelatihan:** Bootcamp Cyber Security (Dibimbing.id).
 
 ### 🛠️ Keahlian Teknis (Technical Skills)
-Berdasarkan proyek yang telah diselesaikan, berikut adalah *stack* teknologi yang saya kuasai:
+Berdasarkan proyek yang telah diselesaikan, berikut adalah *stack* teknologi yang saya gunakan:
 
 | Kategori | Tools & Konsep |
 | :--- | :--- |
-| **Network Analysis** | [cite_start]Wireshark, Nmap, TCP/IP Analysis[cite: 537]. |
-| **Penetration Testing** | [cite_start]Metasploit Framework, Burp Suite, OpenVPN, SSH[cite: 12, 537]. |
-| **Malware Analysis** | [cite_start]Any.Run (Dynamic), VirusTotal (Static), IDA Pro/Ghidra (Conceptual), MSFVenom[cite: 636, 785]. |
-| **Sistem Operasi** | [cite_start]Linux (Debian/Kali), Windows[cite: 12, 653]. |
-| **Frameworks** | [cite_start]MITRE ATT&CK, CVSS v4.0 Scoring, OWASP Top 10[cite: 251, 787]. |
+| **Network Analysis** | Wireshark, Nmap, TCP/IP Analysis. |
+| **Penetration Testing** | Metasploit Framework, Burp Suite, OpenVPN, SSH. |
+| **Malware Analysis** | Any.Run (Dynamic), VirusTotal (Static), IDA Pro/Ghidra (Conceptual), MSFVenom. |
+| **Sistem Operasi** | Linux (Kali Linux), Windows. |
+| **Frameworks** | MITRE ATT&CK, CVSS v4.0 Scoring, OWASP Top 10. |
 
 ---
 
+# This repository serves as a showcase of my technical capabilities in Cyber Security. Below are selected highlights from my laboratory assessments and projects, focusing on Vulnerability Assessment, Penetration Testing, and Malware Analysis. 
 ## 📂 Project 1: Linux Server Vulnerability Assessment & Privilege Escalation
 
 **Deskripsi:**
-Proyek ini merupakan simulasi *Black Box Penetration Testing* pada mesin server berbasis Linux Debian. [cite_start]Tujuannya adalah mengidentifikasi celah keamanan yang memungkinkan eskalasi hak akses (*Privilege Escalation*) dari pengguna biasa menjadi *root*[cite: 12, 13].
+Proyek ini merupakan simulasi *Black Box Penetration Testing* pada mesin server berbasis Linux Debian. Tujuannya adalah mengidentifikasi celah keamanan yang memungkinkan eskalasi hak akses (*Privilege Escalation*) dari pengguna biasa menjadi *root*.
 
 ### 2. Rekognisi & Scanning (Reconnaissance)
 Tahap awal melibatkan pengumpulan informasi untuk memetakan permukaan serangan (*attack surface*).
 
-* [cite_start]**Target:** 1 Mesin Debian (IP: `10.201.100.49`)[cite: 12, 42].
+* **Target:** 1 Mesin Debian (IP: `10.201.100.49`).
 * **Metodologi:**
-    * [cite_start]Akses awal dilakukan menggunakan protokol SSH melalui koneksi OpenVPN[cite: 12, 20].
-    * [cite_start]Identifikasi identitas pengguna (`id`, `whoami`) dan pemeriksaan grup default[cite: 22, 23].
-    * [cite_start]Enumerasi permission file sensitif dan konfigurasi `sudo`[cite: 25, 26].
+    * Akses awal dilakukan menggunakan protokol SSH melalui koneksi OpenVPN.
+    * Identifikasi identitas pengguna (`id`, `whoami`) dan pemeriksaan grup default.
+    * Enumerasi permission file sensitif dan konfigurasi `sudo`.
 
 ### 3. Dokumentasi Eksploitasi (Exploitation)
 *Peringatan: Seluruh eksploitasi dilakukan di lingkungan laboratorium terkontrol (TryHackMe) secara legal dan etis.*
@@ -54,9 +52,8 @@ File `/etc/shadow` yang menyimpan *hash* password pengguna memiliki konfigurasi 
     user@debian:~$ ls -l /etc/shadow
     -rw-r--rw- 1 root shadow 837 Aug 25 2019 /etc/shadow
     ```
-    [cite_start]*[cite: 158, 168]*
-* [cite_start]**Eksploitasi:** Hash password root berhasil di-*crack* menggunakan **John The Ripper** dengan wordlist `rockyou.txt`, menghasilkan password `password123`[cite: 30, 249].
-* [cite_start]**CVSS Score:** 8.5 (High)[cite: 250].
+* **Eksploitasi:** Hash password root berhasil di-*crack* menggunakan **John The Ripper** dengan wordlist `rockyou.txt`, menghasilkan password `password123`.
+* **CVSS Score:** 8.5 (High).
 
 #### 🚩 Temuan B: Misconfiguration Sudo NOPASSWD
 Pengguna diizinkan menjalankan perintah tertentu sebagai *root* tanpa autentikasi password.
@@ -68,72 +65,68 @@ Pengguna diizinkan menjalankan perintah tertentu sebagai *root* tanpa autentikas
     (root) NOPASSWD: /usr/bin/nano
     ...
     ```
-    [cite_start]*[cite: 293-295]*
 * **Eksploitasi:** Menggunakan binary `find` untuk melakukan *shell escape* dan mendapatkan akses root instan.
     ```bash
     user@debian:~$ sudo find . -exec /bin/sh \; -quit
     # whoami
     root
     ```
-    [cite_start]*[cite: 314-316]*
 
 #### 🚩 Temuan C: Vulnerable SUID Binary (Exim 4.84)
 Ditemukan binary `exim` versi lawas (4.84) dengan bit SUID aktif yang rentan terhadap *Local Privilege Escalation* (CVE-2016-1531).
 
-* [cite_start]**Eksploitasi:** Menjalankan script eksploitasi lokal `./cve-2016-1531.sh` yang memberikan akses root shell[cite: 360, 383].
+* **Eksploitasi:** Menjalankan script eksploitasi lokal `./cve-2016-1531.sh` yang memberikan akses root shell.
 
 ### 4. Post-Exploitation & Konsep Privilege Escalation
 Setelah mendapatkan akses *root*, dampak yang ditimbulkan meliputi:
-* [cite_start]**Kontrol Penuh:** Penyerang memiliki kendali penuh atas sistem operasi[cite: 427].
-* [cite_start]**Pencurian Data:** Akses ke seluruh file sistem, termasuk SSH Private Key root yang ditemukan terekspos (`/root/.ssh/root_key` readable)[cite: 431, 473].
-* [cite_start]**Persistensi:** Penyerang dapat membuat *backdoor* atau akun baru untuk akses jangka panjang[cite: 504].
+* **Kontrol Penuh:** Penyerang memiliki kendali penuh atas sistem operasi.
+* **Pencurian Data:** Akses ke seluruh file sistem, termasuk SSH Private Key root yang ditemukan terekspos (`/root/.ssh/root_key` readable).
+* **Persistensi:** Penyerang dapat membuat *backdoor* atau akun baru untuk akses jangka panjang.
 
 ---
 
 ## 📂 Project 2: Malware Analysis Simulation (Trojan Backdoor)
 
 **Deskripsi:**
-Analisis perilaku *malicious software* menggunakan pendekatan *Sandboxing* (Analisis Dinamis) dan Statis. [cite_start]Malware sampel dibuat menggunakan `msfvenom` untuk mensimulasikan serangan *Reverse Shell*[cite: 636].
+Analisis perilaku *malicious software* menggunakan pendekatan *Sandboxing* (Analisis Dinamis) dan Statis. [cite_start]Malware sampel dibuat menggunakan `msfvenom` untuk mensimulasikan serangan *Reverse Shell*.
 
 ### 2. Rekognisi & Pembuatan Sampel
 * **Nama File:** `dibimbing.exe`
-* [cite_start]**Payload:** `windows/meterpreter/reverse_https` (Komunikasi terenkripsi via HTTPS)[cite: 656].
+* **Payload:** `windows/meterpreter/reverse_https` (Komunikasi terenkripsi via HTTPS).
 * **Teknik:** *Reverse Engineering* perilaku malware yang menghubungi server penyerang (C2).
 
 ### 3. Dokumentasi Eksploitasi & Analisis (Lab Environment)
 
 #### Analisis Statis (VirusTotal)
-* [cite_start]**Identitas File (Hash SHA-256):** `ba5d63bcd091ba55e1fe25de5752561a18d0aa3a...`[cite: 814, 888].
-* [cite_start]**Deteksi:** 51 dari 71 vendor keamanan mendeteksi file ini sebagai berbahaya (*Malicious*)[cite: 812].
+* **Identitas File (Hash SHA-256):** `ba5d63bcd091ba55e1fe25de5752561a18d0aa3a...`.
+* **Deteksi:** 51 dari 71 vendor keamanan mendeteksi file ini sebagai berbahaya (*Malicious*).
 
 #### Analisis Dinamis (Any.Run Sandbox)
 Berdasarkan eksekusi di lingkungan aman, malware menunjukkan *Indicator of Compromise* (IOC) berikut:
-* [cite_start]**Network Activity:** Terdeteksi koneksi TCP persisten ke IP penyerang (`192.168.20.128`) pada port `8080`[cite: 886].
-* [cite_start]**Registry Modification (MITRE ATT&CK T1012):** Malware membaca pengaturan keamanan Internet Explorer dan proxy untuk memastikan koneksi keluar tidak diblokir[cite: 788, 801].
+* **Network Activity:** Terdeteksi koneksi TCP persisten ke IP penyerang (`192.168.20.128`) pada port `8080`.
+* **Registry Modification (MITRE ATT&CK T1012):** Malware membaca pengaturan keamanan Internet Explorer dan proxy untuk memastikan koneksi keluar tidak diblokir.
 
 ### 4. Post-Exploitation (Konseptual)
 Jika malware ini berhasil dieksekusi di komputer korban:
-* [cite_start]**Remote Access:** Penyerang mendapatkan sesi *Meterpreter*, memungkinkan eksekusi perintah jarak jauh, *keylogging*, dan pengambilan tangkapan layar[cite: 735].
-* [cite_start]**Stealth:** Proses berjalan di latar belakang tanpa antarmuka pengguna, sulit dideteksi oleh pengguna awam[cite: 771].
+* **Remote Access:** Penyerang mendapatkan sesi *Meterpreter*, memungkinkan eksekusi perintah jarak jauh, *keylogging*, dan pengambilan tangkapan layar.
+* **Stealth:** Proses berjalan di latar belakang tanpa antarmuka pengguna, sulit dideteksi oleh pengguna awam.
 
 ---
 
 ## 5. Laporan Akhir & Finalisasi (Final Report & Mitigation)
 
-Sebagai penutup portofolio, berikut adalah rangkuman rekomendasi mitigasi strategis berdasarkan kedua proyek di atas untuk meningkatkan postur keamanan organisasi.
+Berikut adalah rangkuman rekomendasi mitigasi strategis berdasarkan kedua proyek di atas untuk meningkatkan postur keamanan organisasi.
 
 ### 🛡️ Strategi Mitigasi (Defense in Depth)
 
 **Untuk Server Linux (VAPT Findings):**
-1.  [cite_start]**Hardening Permission:** Pastikan permission file `/etc/shadow` diatur ke `640` dan kunci SSH (`.ssh/`) diatur ke `600`[cite: 282, 506].
-2.  [cite_start]**Prinsip Least Privilege:** Hapus konfigurasi `NOPASSWD` di file `sudoers` untuk binary yang memungkinkan akses shell (seperti `find`, `nano`, `vim`)[cite: 358].
-3.  [cite_start]**Patch Management:** Selalu perbarui paket perangkat lunak (seperti Exim) ke versi terbaru untuk menambal CVE yang diketahui[cite: 429].
+1.  **Hardening Permission:** Pastikan permission file `/etc/shadow` diatur ke `640` dan kunci SSH (`.ssh/`) diatur ke `600`.
+2.  **Prinsip Least Privilege:** Hapus konfigurasi `NOPASSWD` di file `sudoers` untuk binary yang memungkinkan akses shell (seperti `find`, `nano`, `vim`).
+3.  **Patch Management:** Selalu perbarui paket perangkat lunak (seperti Exim) ke versi terbaru untuk menambal CVE yang diketahui.
 
 **Untuk Pencegahan Malware:**
-1.  [cite_start]**Endpoint Detection & Response (EDR):** Implementasikan solusi EDR untuk mendeteksi perilaku anomali seperti koneksi *reverse shell* secara *real-time*[cite: 936].
-2.  [cite_start]**Application Whitelisting:** Batasi eksekusi file `.exe` hanya dari sumber yang terdaftar dan terverifikasi[cite: 937].
-3.  [cite_start]**User Awareness:** Pelatihan rutin kepada pengguna untuk tidak mengunduh atau menjalankan file dari sumber yang tidak dikenal, karena malware sering didistribusikan melalui rekayasa sosial[cite: 941].
+1.  **Endpoint Detection & Response (EDR):** Implementasikan solusi EDR untuk mendeteksi perilaku anomali seperti koneksi *reverse shell* secara *real-time*.
+2.  **Application Whitelisting:** Batasi eksekusi file `.exe` hanya dari sumber yang terdaftar dan terverifikasi.
+3.  **User Awareness:** Pelatihan rutin kepada pengguna untuk tidak mengunduh atau menjalankan file dari sumber yang tidak dikenal, karena malware sering didistribusikan melalui rekayasa sosial.
 
 ***
-
-*Disclaimer: Portofolio ini disusun untuk tujuan pendidikan dan demonstrasi keahlian profesional. Seluruh aktivitas pengujian dilakukan di lingkungan laboratorium yang diizinkan.*
