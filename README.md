@@ -88,7 +88,7 @@ Setelah mendapatkan akses *root*, dampak yang ditimbulkan meliputi:
 ## 📂 Project 2: Malware Analysis Simulation (Trojan Backdoor)
 
 **Deskripsi:**
-Analisis perilaku *malicious software* menggunakan pendekatan *Sandboxing* (Analisis Dinamis) dan Statis. [cite_start]Malware sampel dibuat menggunakan `msfvenom` untuk mensimulasikan serangan *Reverse Shell*.
+Analisis perilaku *malicious software* menggunakan pendekatan *Sandboxing* (Analisis Dinamis) dan Statis. Malware sampel dibuat menggunakan `msfvenom` untuk mensimulasikan serangan *Reverse Shell*.
 
 ### 2. Rekognisi & Pembuatan Sampel
 * **Nama File:** `dibimbing.exe`
